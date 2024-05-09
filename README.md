@@ -6,6 +6,10 @@
 $ npm create vite@latest vite-react-tailwindcss-extension -- --template react-ts
 ```
 
+## Install Tailwind CSS with Vite
+
+[Link](https://tailwindcss.com/docs/guides/vite)
+
 ## Start
 
 ```shell
