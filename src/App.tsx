@@ -3,33 +3,25 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+function handleClick () {
+  // do nothing for now
+}
 
+
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App flex flex-col gap-4 h-screen items-center justify-center">
+      <div className="text-5xl font-extrabold">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          This is My First Browser Extensions!
+        </span>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className='text-2xl text-gray-800'>
+        Powered by Vite, React, TypeScript, and TailwindCSS
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <button className="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm" onClick={handleClick}>Click me!</button>
+    </div>
   )
 }
 
-export default App
+export default App;
