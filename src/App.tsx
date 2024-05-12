@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+import browser from "webextension-polyfill";
+
 function handleClick () {
-  // do nothing for now
+  browser.runtime.sendMessage({ action: 'Hi from content script 👋' });
 }
 
 
