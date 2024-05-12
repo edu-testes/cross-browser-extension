@@ -1,5 +1,7 @@
 # cross-browser-extension
 
+[Article](https://akoskm.com/how-to-build-cross-browser-extensions-react-typescript-tailwindcss-vite)
+
 ## Create new project
 
 ```shell
@@ -9,6 +11,12 @@ $ npm create vite@latest vite-react-tailwindcss-extension -- --template react-ts
 ## Install Tailwind CSS with Vite
 
 [Link](https://tailwindcss.com/docs/guides/vite)
+
+## Add webextension-polyfill package
+
+```shell
+$ npm i -D webextension-polyfill @types/webextension-polyfill
+```
 
 ## Start
 
